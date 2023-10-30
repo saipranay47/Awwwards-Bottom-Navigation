@@ -1,4 +1,5 @@
 import React from "react";
+import StickyBottomNavigation from "./components/StickyBottomNavigation";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           inspired by Awwwards.com.
         </p>
       </div>
+
+      <StickyBottomNavigation />
     </div>
   );
 }

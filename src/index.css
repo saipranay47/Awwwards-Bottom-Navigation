@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --border-radius--menu-wrapper : 100px;
+  --border-radius--menu-link : 92px
+}
+
+.menuLink {
+  @apply gap-x-2 max-md:gap-x-1 text-white cursor-pointer border flex-none justify-between items-center text-sm max-sm:text-xs font-normal leading-[114.286%] max-sm:leading-none no-underline transition-[background-color] duration-[0.2s] ease-[ease-in-out] flex py-4 max-sm:py-2 px-6 max-sm:px-3 rounded-[80px] border-solid border-[#222325] hover:bg-[#36353a];
+}
+
+.transition-custom {
+  transition-property: all;
+  transition-duration: 0.3s; 
+  transition-timing-function: ease-in-out;
+}
+
+.animateNav {
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate3d(0px, 3vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 0px;
+    opacity: 0;
+  }
+  30% {
+    transform: translate3d(0px, 2vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 100px;
+    opacity: 0;
+  }
+  60% {
+    transform: translate3d(0px, 1vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: 140px;
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    height: fit-content;
+    opacity: 1;
+  }
+}
