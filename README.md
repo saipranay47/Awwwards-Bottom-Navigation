@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Sticky Bottom Navigation (React + Tailwind)
+This is a React + Tailwind implementation of a sticky bottom navigation. The navigation is designed to be simple, yet functional, and is inspired by the Awwwards website. It is a great option for websites that need a sticky bottom navigation that is both stylish and easy to use.
